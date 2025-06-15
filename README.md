@@ -7,7 +7,7 @@
 |  | Diffusion Models Meet Contextual Bandits | Preprint | [pdf](papers/2025_diffusion_ts.pdf) |
 | **2024** | Logarithmic Smoothing for Pessimistic Off-Policy Evaluation, Selection and Learning | NeurIPS 2024 (Spotlight) & RecSys 2024 CONSEQUENCES Workshop (Oral) | [pdf](papers/2024_logarithmic_smoothing.pdf) |
 |  | Unified PAC-Bayesian Study of Pessimism for Offline Policy Learning with Regularized Importance Sampling | UAI 2024 (Poster) | [pdf](papers/2024_unified_opl.pdf) |
-| **2023** | Linear Diffusion Models Meet Contextual Bandits with Large Action Spaces | NeurIPS 2023 Workshop on Foundation Models for Decision-Making | [pdf](papers/2024_linear_diffusion_ts.pdf) |
+| **2023** | Linear Diffusion Models Meet Contextual Bandits with Large Action Spaces | NeurIPS 2023 Workshop on Foundation Models for Decision-Making | [pdf](papers/2023_linear_diffusion_ts.pdf) |
 |  | Exponential Smoothing for Off-Policy Learning | ICML 2023 (Oral & Poster) | [pdf](papers/2023_exponential_smoothing.pdf) |
 |  | Mixed-Effect Thompson Sampling | AISTATS 2023 (Poster) | [pdf](papers/2023_mixed_effect.pdf) |
 |  | Probabilistic Rank and Reward: A Scalable Model for Slate Recommendation | Preprint | [pdf](papers/2023_prr.pdf) |
