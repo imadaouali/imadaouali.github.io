@@ -11,6 +11,6 @@
 |  | Exponential Smoothing for Off-Policy Learning | ICML 2023 (Oral & Poster) | [pdf](papers/2023_exponential_smoothing.pdf) |
 |  | Mixed-Effect Thompson Sampling | AISTATS 2023 (Poster) | [pdf](papers/2023_mixed_effect.pdf) |
 |  | Probabilistic Rank and Reward: A Scalable Model for Slate Recommendation | Preprint | [pdf](papers/2023_prr.pdf) |
-| **2022** | Reward Optimizing Recommendation using Deep Learning and Fast Maximum Inner Product Search | Tutorials at KDD 2022 & ECML 2022 | [pdf](papers/2022_reco_tutorial.pdf) |
+| **2022** | Reward Optimizing Recommendation using Deep Learning and Fast Maximum Inner Product Search | KDD 2022 & ECML 2022 Tutorials | [pdf](papers/2022_reco_tutorial.pdf) |
 |  | Combining Reward and Rank Signals for Slate Recommendation |  KDD 2022 BCIRWIS Workshop | [pdf](papers/2022_prr.pdf) |
 |  | Offline Evaluation of Reward-Optimizing Recommender Systems: The Case of Simulation | RecSys 2022 SimuRec Workshop | [pdf](papers/2022_offline_reco_eval.pdf) |
