@@ -1,5 +1,3 @@
-# imadaouali.github.io
-
 # Research papers (full–text PDFs)
 
 | Year | Title | Venue / status | PDF |
