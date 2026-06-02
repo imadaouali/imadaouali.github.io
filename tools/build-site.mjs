@@ -23,13 +23,13 @@ const papers = [
   {
     slug: "2025_opl_las",
     pdf: "2025_opl_las.pdf",
-    groupYear: "2025",
-    citationDate: "2025",
+    groupYear: "2026",
+    citationDate: "2026",
     title:
       "Off-Policy Learning in Large Action Spaces: Optimization Matters More Than Estimation",
     authors: ["Imad Aouali", "Otmane Sakhi"],
-    venue: "RecSys 2025 CONSEQUENCES Workshop",
-    citationVenue: "RecSys 2025 CONSEQUENCES Workshop",
+    venue: "ICML 2026",
+    citationVenue: "ICML 2026",
     arxivId: "2509.03456",
     externalUrl: "https://arxiv.org/abs/2509.03456",
     abstract:
@@ -490,6 +490,7 @@ function renderIndex() {
   }
 
   const sections = [...grouped.entries()]
+    .sort(([a], [b]) => Number(b) - Number(a))
     .map(
       ([year, items]) => `<section id="year-${html(year)}">
     <h2>${html(year)}</h2>
