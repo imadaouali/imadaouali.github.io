@@ -603,9 +603,6 @@ function renderSitemap() {
   const urls = [
     { loc: `${SITE_URL}/`, lastmod: UPDATED },
     ...papers.map((paper) => ({ loc: paperUrl(paper), lastmod: UPDATED })),
-    ...papers.map((paper) => ({ loc: pdfUrl(paper) })),
-    ...presentations.map((item) => ({ loc: urlFor(item.href) })),
-    ...resources.map((item) => ({ loc: urlFor(item.href) })),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
