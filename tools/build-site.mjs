@@ -316,7 +316,7 @@ const presentations = [
     description: "Hierarchical modeling approaches for contextual bandits",
   },
   {
-    title: "PhD Thesis Defense",
+    title: "On-Policy and Off-Policy Learning for Large Action Spaces",
     href: "presentations/aouali_thesis.pdf",
     description: "Defense slides for Imad Aouali's thesis",
   },
