@@ -3,271 +3,332 @@
 <head>
   <meta charset="utf-8">
   <title>Publications of Imad Aouali</title>
-  <meta name="description" content="Full PDFs of publications by Imad Aouali: NeurIPS, ICML, AISTATS, UAI, RecSys, KDD, ECML.">
+  <meta name="description" content="Publications, abstracts, and PDFs by Imad Aouali in bandits, off-policy learning, recommender systems, and generative models.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://imadaouali.github.io/">
   <meta name="robots" content="index,follow">
-  <style>
-    :root {
-      --bg: #fff; --fg: #0a0a0a; --muted:#57606a; --link:#0a58ca; --card:#f6f8fa; --border:#e5e7eb;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg:#0b0f14; --fg:#e6edf3; --muted:#9aa4af; --link:#66b3ff; --card:#121820; --border:#1f2937;
+  <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Publications of Imad Aouali",
+  "url": "https://imadaouali.github.io/",
+  "about": {
+    "@type": "Person",
+    "name": "Imad Aouali",
+    "url": "https://iaouali.com"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://imadaouali.github.io/papers/2025_diffusion_bandit.html",
+        "name": "Diffusion Models Meet Contextual Bandits"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://imadaouali.github.io/papers/2025_opl_las.html",
+        "name": "Off-Policy Learning in Large Action Spaces: Optimization Matters More Than Estimation"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://imadaouali.github.io/papers/2025_counterfactual_sample_identification.html",
+        "name": "Offline Contextual Bandit with Counterfactual Sample Identification"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://imadaouali.github.io/papers/2025_structured_dm.html",
+        "name": "Bayesian Off-Policy Evaluation and Learning for Large Action Spaces"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://imadaouali.github.io/papers/2025_bayes_bai.html",
+        "name": "Prior-Dependent Allocations for Bayesian Fixed-Budget Best-Arm Identification in Structured Bandits"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "url": "https://imadaouali.github.io/papers/2024_logarithmic_smoothing.html",
+        "name": "Logarithmic Smoothing for Pessimistic Off-Policy Evaluation, Selection and Learning"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "url": "https://imadaouali.github.io/papers/2024_unified_opl.html",
+        "name": "Unified PAC-Bayesian Study of Pessimism for Offline Policy Learning with Regularized Importance Sampling"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "url": "https://imadaouali.github.io/papers/2023_linear_diffusion_ts.html",
+        "name": "Linear Diffusion Models Meet Contextual Bandits with Large Action Spaces"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "url": "https://imadaouali.github.io/papers/2023_exponential_smoothing.html",
+        "name": "Exponential Smoothing for Off-Policy Learning"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "url": "https://imadaouali.github.io/papers/2023_mixed_effect.html",
+        "name": "Mixed-Effect Thompson Sampling"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "url": "https://imadaouali.github.io/papers/2023_prr.html",
+        "name": "Probabilistic Rank and Reward: A Scalable Model for Slate Recommendation"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "url": "https://imadaouali.github.io/papers/2022_reco_tutorial.html",
+        "name": "Reward Optimizing Recommendation using Deep Learning and Fast Maximum Inner Product Search"
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "url": "https://imadaouali.github.io/papers/2022_prr.html",
+        "name": "Combining Reward and Rank Signals for Slate Recommendation"
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "url": "https://imadaouali.github.io/papers/2022_offline_reco_eval.html",
+        "name": "Offline Evaluation of Reward-Optimizing Recommender Systems: The Case of Simulation"
       }
-    }
-    html,body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-    .wrap { max-width:900px; margin:48px auto; padding:0 16px; }
-    h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; }
-    h2 { font-size:1.5rem; line-height:1.3; margin:32px 0 16px; padding-top:24px; border-top:1px solid var(--border); }
-    .sub { color:var(--muted); margin:0 0 24px; }
-    ul { list-style:none; padding:0; margin:0; }
-    li { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 16px; margin:10px 0; display:flex; gap:10px; align-items:baseline; }
-    .year { font-weight:600; color:var(--muted); width:3.5rem; flex:0 0 auto; }
-    a { color:var(--link); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .pdf-tag { font:12px/1 system-ui, sans-serif; background:transparent; border:1px solid var(--border); padding:3px 8px; border-radius:999px; margin-right:8px; }
-    .conf-tag { font-size:12px; text-transform:uppercase; color:var(--muted); background:transparent; border:1px solid var(--border); border-radius:6px; padding:2px 6px; margin-left:6px; }
-    .title { flex:1 1 auto; }
-    .pres-desc { display:block; color:var(--muted); font-size:14px; margin-top:4px; }
-    footer { margin-top:24px; color:var(--muted); font-size:14px; }
-  </style>
+    ]
+  }
+}</script>
 </head>
 <body>
   <main class="wrap">
-    <h1>Publications</h1>
-    <p class="sub">This page is used only to host PDFs. For abstracts, code, and details, visit <a href="https://iaouali.com" target="_blank" rel="noopener">iaouali.com</a>.</p>
+    <header class="site-header">
+      <p class="eyebrow">Imad Aouali</p>
+      <h1>Publications</h1>
+      <p class="sub">Research papers, abstracts, and PDFs on contextual bandits, off-policy learning, recommender systems, and generative models.</p>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#papers">Papers</a>
+        <a href="#presentations">Presentations</a>
+        <a href="https://iaouali.com">Main website</a>
+      </nav>
+    </header>
 
-    <ul>
-      <li>
+    <div id="papers"></div>
+  <section id="year-2025">
+    <h2>2025</h2>
+    <ul class="paper-list">
+      <li class="paper-item">
         <span class="year">2025</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2025_diffusion_bandit.pdf" target="_blank" rel="noopener">
-            Diffusion Models Meet Contextual Bandits
-          </a>
-          <span class="conf-tag">NeurIPS 2025</span>
-        </span>
+        <div class="paper-main">
+          <h3><a href="papers/2025_diffusion_bandit.html">Diffusion Models Meet Contextual Bandits</a></h3>
+          <p class="authors">Imad Aouali</p>
+          <p class="venue">NeurIPS 2025</p>
+          <p class="links"><a href="papers/2025_diffusion_bandit.html">Paper page</a><a href="papers/2025_diffusion_bandit.pdf">PDF</a><a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/f380d194841c2d964ccce94460d9d490-Abstract-Conference.html">Record</a></p>
+        </div>
       </li>
-
-      <li>
+      <li class="paper-item">
         <span class="year">2025</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/optim_better_estimation.pdf" target="_blank" rel="noopener">
-            Off-Policy Learning in Large Action Spaces: Optimization Matters More Than Estimation
-          </a>
-          <span class="conf-tag">RecSys 2024 – CONSEQUENCES Workshop</span>
-        </span>
+        <div class="paper-main">
+          <h3><a href="papers/2025_opl_las.html">Off-Policy Learning in Large Action Spaces: Optimization Matters More Than Estimation</a></h3>
+          <p class="authors">Imad Aouali, Otmane Sakhi</p>
+          <p class="venue">RecSys 2025 CONSEQUENCES Workshop</p>
+          <p class="links"><a href="papers/2025_opl_las.html">Paper page</a><a href="papers/2025_opl_las.pdf">PDF</a><a href="https://arxiv.org/abs/2509.03456">Record</a></p>
+        </div>
       </li>
-
-      <li>
+      <li class="paper-item">
         <span class="year">2025</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2025_counterfactual_sample_identification.pdf" target="_blank" rel="noopener">
-            Offline Contextual Bandit with Counterfactual Sample Identification
-          </a>
-          <span class="conf-tag">RecSys 2024 – CONSEQUENCES Workshop</span>
-        </span>
+        <div class="paper-main">
+          <h3><a href="papers/2025_counterfactual_sample_identification.html">Offline Contextual Bandit with Counterfactual Sample Identification</a></h3>
+          <p class="authors">Alexandre Gilotte, Otmane Sakhi, Imad Aouali, Benjamin Heymann</p>
+          <p class="venue">RecSys 2025 CONSEQUENCES Workshop</p>
+          <p class="links"><a href="papers/2025_counterfactual_sample_identification.html">Paper page</a><a href="papers/2025_counterfactual_sample_identification.pdf">PDF</a><a href="https://arxiv.org/abs/2509.10520">Record</a></p>
+        </div>
       </li>
-
-      <li>
+      <li class="paper-item">
         <span class="year">2025</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2025_structured_dm.pdf" target="_blank" rel="noopener">
-            Bayesian Off-Policy Evaluation and Learning for Large Action Spaces
-          </a>
-          <span class="conf-tag">AISTATS 2025</span>
-        </span>
+        <div class="paper-main">
+          <h3><a href="papers/2025_structured_dm.html">Bayesian Off-Policy Evaluation and Learning for Large Action Spaces</a></h3>
+          <p class="authors">Imad Aouali, Victor-Emmanuel Brunel, David Rohde, Anna Korba</p>
+          <p class="venue">AISTATS 2025</p>
+          <p class="links"><a href="papers/2025_structured_dm.html">Paper page</a><a href="papers/2025_structured_dm.pdf">PDF</a><a href="https://proceedings.mlr.press/v258/aouali25a.html">Record</a></p>
+        </div>
       </li>
-
-      <li>
+      <li class="paper-item">
         <span class="year">2025</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2025_bayes_bai.pdf" target="_blank" rel="noopener">
-            Prior-Dependent Allocations for Bayesian Fixed-Budget Best-Arm Identification in Structured Bandits
-          </a>
-          <span class="conf-tag">AISTATS 2025</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2024</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2024_logarithmic_smoothing.pdf" target="_blank" rel="noopener">
-            Logarithmic Smoothing for Pessimistic Off-Policy Evaluation, Selection and Learning
-          </a>
-          <span class="conf-tag">NeurIPS 2024</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2024</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2024_unified_opl.pdf" target="_blank" rel="noopener">
-            Unified PAC-Bayesian Study of Pessimism for Offline Policy Learning with Regularized Importance Sampling
-          </a>
-          <span class="conf-tag">UAI 2024</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2023</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2023_linear_diffusion_ts.pdf" target="_blank" rel="noopener">
-            Linear Diffusion Models Meet Contextual Bandits with Large Action Spaces
-          </a>
-          <span class="conf-tag">FMDM @ NeurIPS 2023</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2023</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2023_exponential_smoothing.pdf" target="_blank" rel="noopener">
-            Exponential Smoothing for Off-Policy Learning
-          </a>
-          <span class="conf-tag">ICML 2023</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2023</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2023_mixed_effect.pdf" target="_blank" rel="noopener">
-            Mixed-Effect Thompson Sampling
-          </a>
-          <span class="conf-tag">AISTATS 2023</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2023</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2023_prr.pdf" target="_blank" rel="noopener">
-            Probabilistic Rank and Reward: A Scalable Model for Slate Recommendation
-          </a>
-          <span class="conf-tag">Preprint</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2022</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2022_reco_tutorial.pdf" target="_blank" rel="noopener">
-            Reward Optimizing Recommendation using Deep Learning and Fast MIPS
-          </a>
-          <span class="conf-tag">Tutorials @ KDD &amp; ECML 2022</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2022</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2022_prr.pdf" target="_blank" rel="noopener">
-            Combining Reward and Rank Signals for Slate Recommendation
-          </a>
-          <span class="conf-tag">BCIRWIS @ KDD 2022</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">2022</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/2022_offline_reco_eval.pdf" target="_blank" rel="noopener">
-            Offline Evaluation of Reward-Optimizing Recommender Systems: The Case of Simulation
-          </a>
-          <span class="conf-tag">SimuRec @ RecSys 2022</span>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">—</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="papers/offline_bandit_bibliography.pdf" target="_blank" rel="noopener">
-            The bibliography section of Otmane Sakhi's thesis contains most of the related work
-          </a>
-        </span>
+        <div class="paper-main">
+          <h3><a href="papers/2025_bayes_bai.html">Prior-Dependent Allocations for Bayesian Fixed-Budget Best-Arm Identification in Structured Bandits</a></h3>
+          <p class="authors">Nicolas Nguyen, Imad Aouali, András György, Claire Vernade</p>
+          <p class="venue">AISTATS 2025</p>
+          <p class="links"><a href="papers/2025_bayes_bai.html">Paper page</a><a href="papers/2025_bayes_bai.pdf">PDF</a><a href="https://proceedings.mlr.press/v258/nguyen25a.html">Record</a></p>
+        </div>
       </li>
     </ul>
+  </section>
 
-    <h2>Presentations</h2>
-    <p class="sub">Summary presentations connecting multiple research papers.</p>
-
-    <ul>
-      <li>
-        <span class="year">—</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="presentations/bayes_opl.pdf" target="_blank" rel="noopener">
-            Bayesian Off-Policy Evaluation and Learning for Large Action Spaces
-            <span class="pres-desc">Bayesian approaches to off-policy evaluation and learning</span>
-          </a>
-        </span>
+  <section id="year-2024">
+    <h2>2024</h2>
+    <ul class="paper-list">
+      <li class="paper-item">
+        <span class="year">2024</span>
+        <div class="paper-main">
+          <h3><a href="papers/2024_logarithmic_smoothing.html">Logarithmic Smoothing for Pessimistic Off-Policy Evaluation, Selection and Learning</a></h3>
+          <p class="authors">Otmane Sakhi, Imad Aouali, Pierre Alquier, Nicolas Chopin</p>
+          <p class="venue">NeurIPS 2024</p>
+          <p class="links"><a href="papers/2024_logarithmic_smoothing.html">Paper page</a><a href="papers/2024_logarithmic_smoothing.pdf">PDF</a><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/9379ea6ba7a61a402c7750833848b99f-Abstract-Conference.html">Record</a></p>
+        </div>
       </li>
-
-      <li>
-        <span class="year">—</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="presentations/diffusion_meet_bandit.pdf" target="_blank" rel="noopener">
-            Diffusion Models Meet Bandits
-            <span class="pres-desc">Connecting diffusion models with contextual bandit algorithms</span>
-          </a>
-        </span>
+      <li class="paper-item">
+        <span class="year">2024</span>
+        <div class="paper-main">
+          <h3><a href="papers/2024_unified_opl.html">Unified PAC-Bayesian Study of Pessimism for Offline Policy Learning with Regularized Importance Sampling</a></h3>
+          <p class="authors">Imad Aouali, Victor-Emmanuel Brunel, David Rohde, Anna Korba</p>
+          <p class="venue">UAI 2024</p>
+          <p class="links"><a href="papers/2024_unified_opl.html">Paper page</a><a href="papers/2024_unified_opl.pdf">PDF</a><a href="https://proceedings.mlr.press/v244/aouali24a.html">Record</a></p>
+        </div>
       </li>
-
-      <li>
-        <span class="year">—</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="presentations/exp_smooting_opl.pdf" target="_blank" rel="noopener">
-            Exponential Smoothing for Off-Policy Learning
-            <span class="pres-desc">Unified view of smoothing techniques in off-policy evaluation</span>
-          </a>
-        </span>
-      </li>
-
-      <li>
-        <span class="year">—</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="presentations/mixed_effect_ts.pdf" target="_blank" rel="noopener">
-            Mixed-Effect Thompson Sampling
-            <span class="pres-desc">Hierarchical modeling approaches for contextual bandits</span>
-          </a>
-        </span>
-      </li>
-
-            <li>
-        <span class="year">—</span>
-        <span class="title">
-          <span class="pdf-tag">PDF</span>
-          <a href="presentations/offline_bandit_bibliography.pdf" target="_blank" rel="noopener">
-            Bibliography of contextual bandits
-            <span class="pres-desc">The bibliography section of Otmane Sakhi's thesis contains most of the related work</span>
-          </a>
-        </span>
-      </li>
-
-
     </ul>
+  </section>
+
+  <section id="year-2023">
+    <h2>2023</h2>
+    <ul class="paper-list">
+      <li class="paper-item">
+        <span class="year">2023</span>
+        <div class="paper-main">
+          <h3><a href="papers/2023_linear_diffusion_ts.html">Linear Diffusion Models Meet Contextual Bandits with Large Action Spaces</a></h3>
+          <p class="authors">Imad Aouali</p>
+          <p class="venue">Foundation Models for Decision Making Workshop at NeurIPS 2023</p>
+          <p class="links"><a href="papers/2023_linear_diffusion_ts.html">Paper page</a><a href="papers/2023_linear_diffusion_ts.pdf">PDF</a></p>
+        </div>
+      </li>
+      <li class="paper-item">
+        <span class="year">2023</span>
+        <div class="paper-main">
+          <h3><a href="papers/2023_exponential_smoothing.html">Exponential Smoothing for Off-Policy Learning</a></h3>
+          <p class="authors">Imad Aouali, Victor-Emmanuel Brunel, David Rohde, Anna Korba</p>
+          <p class="venue">ICML 2023</p>
+          <p class="links"><a href="papers/2023_exponential_smoothing.html">Paper page</a><a href="papers/2023_exponential_smoothing.pdf">PDF</a><a href="https://proceedings.mlr.press/v202/aouali23a.html">Record</a></p>
+        </div>
+      </li>
+      <li class="paper-item">
+        <span class="year">2023</span>
+        <div class="paper-main">
+          <h3><a href="papers/2023_mixed_effect.html">Mixed-Effect Thompson Sampling</a></h3>
+          <p class="authors">Imad Aouali, Branislav Kveton, Sumeet Katariya</p>
+          <p class="venue">AISTATS 2023</p>
+          <p class="links"><a href="papers/2023_mixed_effect.html">Paper page</a><a href="papers/2023_mixed_effect.pdf">PDF</a><a href="https://proceedings.mlr.press/v206/aouali23a.html">Record</a></p>
+        </div>
+      </li>
+      <li class="paper-item">
+        <span class="year">2023</span>
+        <div class="paper-main">
+          <h3><a href="papers/2023_prr.html">Probabilistic Rank and Reward: A Scalable Model for Slate Recommendation</a></h3>
+          <p class="authors">Imad Aouali, Achraf Ait Sidi Hammou, Otmane Sakhi, David Rohde, Flavian Vasile</p>
+          <p class="venue">Preprint</p>
+          <p class="links"><a href="papers/2023_prr.html">Paper page</a><a href="papers/2023_prr.pdf">PDF</a><a href="https://arxiv.org/abs/2208.06263">Record</a></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="year-2022">
+    <h2>2022</h2>
+    <ul class="paper-list">
+      <li class="paper-item">
+        <span class="year">2022</span>
+        <div class="paper-main">
+          <h3><a href="papers/2022_reco_tutorial.html">Reward Optimizing Recommendation using Deep Learning and Fast Maximum Inner Product Search</a></h3>
+          <p class="authors">Imad Aouali, Amine Benhalloum, Martin Bompaire, Achraf Ait Sidi Hammou, Sergey Ivanov, Benjamin Heymann, David Rohde, Otmane Sakhi, Flavian Vasile, Maxime Vono</p>
+          <p class="venue">Tutorials at KDD 2022 and ECML 2022</p>
+          <p class="links"><a href="papers/2022_reco_tutorial.html">Paper page</a><a href="papers/2022_reco_tutorial.pdf">PDF</a><a href="https://doi.org/10.1145/3534678.3542622">Record</a></p>
+        </div>
+      </li>
+      <li class="paper-item">
+        <span class="year">2022</span>
+        <div class="paper-main">
+          <h3><a href="papers/2022_prr.html">Combining Reward and Rank Signals for Slate Recommendation</a></h3>
+          <p class="authors">Imad Aouali, Sergey Ivanov, Mike Gartrell, David Rohde, Flavian Vasile, Victor Zaytsev, Diego Legrand</p>
+          <p class="venue">BCIRWIS Workshop at KDD 2022</p>
+          <p class="links"><a href="papers/2022_prr.html">Paper page</a><a href="papers/2022_prr.pdf">PDF</a><a href="https://arxiv.org/abs/2107.12455">Record</a></p>
+        </div>
+      </li>
+      <li class="paper-item">
+        <span class="year">2022</span>
+        <div class="paper-main">
+          <h3><a href="papers/2022_offline_reco_eval.html">Offline Evaluation of Reward-Optimizing Recommender Systems: The Case of Simulation</a></h3>
+          <p class="authors">Imad Aouali, Amine Benhalloum, Martin Bompaire, Benjamin Heymann, Olivier Jeunen, David Rohde, Otmane Sakhi, Flavian Vasile</p>
+          <p class="venue">SimuRec Workshop at RecSys 2022</p>
+          <p class="links"><a href="papers/2022_offline_reco_eval.html">Paper page</a><a href="papers/2022_offline_reco_eval.pdf">PDF</a><a href="https://arxiv.org/abs/2209.08642">Record</a></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+    <section id="presentations">
+      <h2>Presentations</h2>
+      <ul class="paper-list">
+        <li class="paper-item compact">
+        <span class="year">PDF</span>
+        <div class="paper-main">
+          <h3><a href="presentations/bayes_opl.pdf">Bayesian Off-Policy Evaluation and Learning for Large Action Spaces</a></h3>
+          <p class="venue">Bayesian approaches to off-policy evaluation and learning</p>
+        </div>
+      </li>
+        <li class="paper-item compact">
+        <span class="year">PDF</span>
+        <div class="paper-main">
+          <h3><a href="presentations/diffusion_meet_bandit.pdf">Diffusion Models Meet Bandits</a></h3>
+          <p class="venue">Connecting diffusion models with contextual bandit algorithms</p>
+        </div>
+      </li>
+        <li class="paper-item compact">
+        <span class="year">PDF</span>
+        <div class="paper-main">
+          <h3><a href="presentations/exp_smooting_opl.pdf">Exponential Smoothing for Off-Policy Learning</a></h3>
+          <p class="venue">Unified view of smoothing techniques in off-policy evaluation</p>
+        </div>
+      </li>
+        <li class="paper-item compact">
+        <span class="year">PDF</span>
+        <div class="paper-main">
+          <h3><a href="presentations/mixed_effect_ts.pdf">Mixed-Effect Thompson Sampling</a></h3>
+          <p class="venue">Hierarchical modeling approaches for contextual bandits</p>
+        </div>
+      </li>
+        <li class="paper-item compact">
+        <span class="year">PDF</span>
+        <div class="paper-main">
+          <h3><a href="presentations/aouali_thesis.pdf">PhD Thesis Defense</a></h3>
+          <p class="venue">Defense slides for Imad Aouali's thesis</p>
+        </div>
+      </li>
+      </ul>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul class="paper-list">
+        <li class="paper-item compact">
+        <span class="year">PDF</span>
+        <div class="paper-main">
+          <h3><a href="papers/offline_bandit_bibliography.pdf">Bibliography of Contextual Bandits</a></h3>
+          <p class="venue">The bibliography section of Otmane Sakhi's thesis contains related work on contextual bandits.</p>
+        </div>
+      </li>
+      </ul>
+    </section>
 
     <footer>
-      Imad Aouali - PDFs served for convenience. Full website at <a href="https://iaouali.com" target="_blank" rel="noopener">iaouali.com</a>.
+      <p>Full personal website: <a href="https://iaouali.com">iaouali.com</a>.</p>
     </footer>
   </main>
 </body>
